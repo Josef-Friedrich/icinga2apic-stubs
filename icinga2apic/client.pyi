@@ -1,15 +1,25 @@
+from logging import Logger
+
+from icinga2apic.objects import Objects
+
 from .actions import Actions
 
-LOG = ...
+LOG: Logger = ...
+
 class Client:
-    '''
-    Icinga 2 Client class
-    '''
 
     actions: Actions
 
-    def __init__(self, url=..., username=..., password=..., timeout=..., certificate=..., key=..., ca_certificate=..., config_file=...) -> None:
-        '''
-        initialize object
-        '''
-        ...
+    objects: Objects
+
+    def __init__(
+        self,
+        url: str | None = ...,
+        username: str | None = ...,
+        password: str | None = ...,
+        timeout: int | None = ...,
+        certificates: str | None = ...,
+        key: str | None = ...,
+        ca_certificate: str | None = ...,
+        config_file: str | None = ...,
+    ) -> None: ...
