@@ -1,6 +1,0 @@
-*.pyc
-.idea/*
-test.py
-dist
-*.egg-info
-build/
