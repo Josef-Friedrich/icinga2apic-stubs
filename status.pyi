@@ -1,4 +1,5 @@
 from _typeshed import Incomplete
+
 from .base import Base as Base
 
 LOG: Incomplete
