@@ -6,6 +6,10 @@ authors = ["Josef Friedrich <josef@friedrich.rocks>"]
 readme = "README.rst"
 repository = "https://github.com/Josef-Friedrich/icinga2apic-stubs"
 license = "MIT"
+packages = [
+    {include = "icinga2apic-stubs"}
+]
+
 classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
