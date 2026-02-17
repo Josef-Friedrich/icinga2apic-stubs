@@ -7,7 +7,6 @@ from .actions import Actions
 LOG: Logger = ...
 
 class Client:
-
     actions: Actions
 
     objects: Objects

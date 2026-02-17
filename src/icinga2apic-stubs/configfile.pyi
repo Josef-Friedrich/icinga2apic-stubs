@@ -1,7 +1,6 @@
 from _typeshed import Incomplete
 
-from .exceptions import \
-    Icinga2ApiConfigFileException as Icinga2ApiConfigFileException
+from .exceptions import Icinga2ApiConfigFileException as Icinga2ApiConfigFileException
 
 class ClientConfigFile:
     file_name: Incomplete

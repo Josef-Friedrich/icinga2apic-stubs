@@ -3,7 +3,6 @@ from logging import Logger
 from typing import Dict, List, Literal, Type, Union
 
 from .client import Client
-from .exceptions import *
 
 if sys.version_info >= (3, 0): ...
 else: ...
@@ -57,7 +56,6 @@ ObjectType = Literal[
 ]
 
 class Base:
-
     base_url_path: str = ...
 
     def __init__(self, manager: Client) -> None: ...

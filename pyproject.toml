@@ -1,26 +1,21 @@
-[tool.poetry]
+[project]
 name = "icinga2apic-stubs"
 version = "0.1.0"
 description = "Type stubs for the icinga2apic package."
-authors = ["Josef Friedrich <josef@friedrich.rocks>"]
+authors = [{ name = "Josef Friedrich", email = "josef@friedrich.rocks" }]
+requires-python = ">=3.8,<4"
 readme = "README.rst"
-repository = "https://github.com/Josef-Friedrich/icinga2apic-stubs"
 license = "MIT"
-packages = [
-    {include = "icinga2apic-stubs"}
-]
+classifiers = ["License :: OSI Approved :: MIT License"]
 
-classifiers = [
-    "License :: OSI Approved :: MIT License",
-]
-
-[tool.poetry.dependencies]
-python = "^3.8"
-
-[tool.poetry.group.dev.dependencies]
-black = "^22.6.0"
-isort = "^5.10.1"
+[project.urls]
+Repository = "https://github.com/Josef-Friedrich/icinga2apic-stubs"
 
 [build-system]
-requires = ["poetry>=1.2.0b2"]
-build-backend = "poetry.masonry.api"
+requires = ["uv_build>=0.10.2,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.14.1",
+]
